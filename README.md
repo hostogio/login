@@ -2,9 +2,9 @@
 Sistema de Login em PHP e Javascript
 
 ---
-#Passo a passo em todoo inicio de aula
+# Passo a passo em todoo inicio de aula
 
-##Habilitar o Proxy
+## Habilitar o Proxy
  Tecla Windows - Abrir a janela Prompt de Comando
  Copie e cole a linha abaixo - selecione e pressione as teclas Ctrl C
 
@@ -13,7 +13,7 @@ Sistema de Login em PHP e Javascript
  cole no prompt de comando e
  Pressione Enter
  
- ##Clonar o repositório **login** na pasta **c:\xampp\htdocs**
+ ## Clonar o repositório **login** na pasta **c:\xampp\htdocs**
   -Tecla windows - abrir o Github Desktop
   -clique em *Sign in to Github.com*
   -Digite seu login e Senha do Github
@@ -23,16 +23,16 @@ Sistema de Login em PHP e Javascript
   -selecione a pasta e confira se o *local path* foi *c:\xampp\htdocs\login*
   -Clique no botão azul *Clone*
   
- ##Habilitar o servidor web **Apache** e o servidor **MySQL**
+ ## Habilitar o servidor web **Apache** e o servidor **MySQL**
  -tecla windowns - Abrir o XAMPP Control Panel
  -CLique em start para apache
  -Clique em start para o MySQL
  -verifique se apareceu a porta 80 Apache e 3306 MySQL
  -verifique se ficou verde o Apache e MySQL
  
- ##Testar se está funcionando
+ ## Testar se está funcionando
  -abra o navegador Firefox Azul e digite http://localhost/login
  
-##Editar utilizando o VS Code 
+## Editar utilizando o VS Code 
 -Tecla Windows - Abrir o Visual Studio Code (é o azul)
 -*Abrir pasta* no VS Code escolha c:\xampp\htdocs\login
