@@ -2,7 +2,7 @@
 
 Sistema de Login em PHP e Javascript
 
-# aula01 - 23/09/2019
+# aula02 - 24/09/2019
 (= Começou a primavera =)
 aula inicial,configuraçao de projeto no Github.
 E criaçao do passo a passo.
