@@ -5,7 +5,7 @@ Sistema de Login em PHP e Javascript
 Layout Bootstrap para os formulários
 - Formulários de login
 - Formulários de recuperaçao de senha
-- Formulários de cadastro de novos usuários~
+- ~Formulários de cadastro de novos usuários~
 
 
 # aula01 - 23/09/2019
