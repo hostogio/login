@@ -62,13 +62,52 @@
 
                     </div>
                     <div class="form-group">
-                    <p>
-                    Novo usuário? <a href="#" id="btnRegistrar">
-                      Registre-se aqui!
-                      </a>
-                    </p>
+                        <p>
+                            Novo usuário? <a href="#" id="btnRegistrar">
+                                Registre-se aqui!
+                            </a>
+                        </p>
 
                     </div>
+                </form>
+            </div>
+        </section>
+
+        <!--
+        Final da Seção de login -->
+
+        <!-- Formulário de Recuperação de senha -->
+        <section class="row">
+            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaLogin">
+
+                <h2>
+                    Gerar Nova Senha
+                </h2>
+                <form action="#" method="post" id="formSenha" class="p-2">
+                    <div class="form-group">
+                        <small class="text-muted">
+                            Para gerar uma nova senha, digite seu e-mail. Clique no link gerado
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="emailGerarSenha" 
+                        id="emailGerarSenha" class="form-control"
+                        placeholder="Email de recuperaçao de senha">
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="::Gerar::"
+                         name="btnGerar" id="btnGerar" class="btn btn-primary btn-block"
+                         placeholder="Email de recuperaçao de senha">
+
+                    <div class="form-group">
+                     <p class="text-center">
+                     Já registrado?
+                     <a href="#" id="btnjaRegistrado">
+                     Entrar por aqui.
+                     </a>
+                     </p>
+                     </div>
                 </form>
             </div>
         </section>
