@@ -77,7 +77,7 @@
         Final da Seção de login -->
 
         <!-- Formulário de Recuperação de senha -->
-        <section class="row">
+        <section class="row mt-5">
             <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaLogin">
 
                 <h2>
