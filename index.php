@@ -1,11 +1,8 @@
 <!doctype html>
-<html lang="pt-br">
-<!--
-     para acessar o projeto, habilite o Apache no XAMPP
-     abra a URl http://localhost/login/ no navegador
--->
-
-
+<html lang="en">
+<!-- Para acessar o projeto, habolite o apachye no XAMMP
+      Abra a URL http://localhost/login/ no navegador
+!-->
 
 <head>
     <!-- Required meta tags -->
@@ -17,10 +14,11 @@
 
     <title>Sistema de Login</title>
     <style>
-      #alerta, #caixaSenha, #caixaRegistro{
-        display: none;
-        
-        }   
+        #alerta,
+        #caixaSenha,
+        #caixaRegistrado {
+            display: none;
+        }
     </style>
 </head>
 
@@ -31,7 +29,7 @@
             <div class="col-lg-4 offset-lg-4" id="alerta">
                 <div class="alert alert-success text-center">
                     <strong class="resultado">
-                        Alo Ha tchurmaáaaaaaaaaaaaaa!
+                        Alo Há Tchurmááááááááááááááááá!
                     </strong>
                 </div>
             </div>
@@ -43,49 +41,52 @@
                     Entrar no Sistema
                 </h2>
                 <form action="#" method="post" class="p-2" id="formLogin">
+
                     <div class="form-group">
                         <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Nome de Usuário" class="form-control">
-
                     </div>
+
                     <div class="form-group">
                         <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control">
-
                     </div>
-                    <div class="custom-control custom-checkbox">
 
-                        <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
+                            <label for="lembrar" class="custom-control-label">
+                                Lembrar de mim.
+                            </label>
 
-                        <label for="lembrar" class="custom-control-label">
-                            Lembrar de mim.
-                        </label>
+                            <a href="#" class="float-right" id="btnEsqueci">
+                                Esqueci a senha!
+                            </a>
 
-                        <a href="#" class="float-right" id="btnEsqueci">
-                            Esqueci a senha!
-                        </a>
+                        </div>
                     </div>
+
                     <div class="form-group">
                         <input type="submit" value="::Entrar::" name="btnEntrar" id="btnEntrar" class="btn btn-primary btn-block">
-
                     </div>
+
                     <div class="form-group">
-                        <p>
-                            Novo usuário? <a href="#" id="btnRegistrar">
+                        <p class="text-center">
+                            Novo Usuário? <a href="#" id="btnRegistrarNovo">
                                 Registre-se aqui!
                             </a>
                         </p>
-
                     </div>
+
                 </form>
             </div>
         </section>
+        <!-- Final da Seção de Login -->
 
-        <!--Final da Seção de login -->
 
-        <!-- Formulário de Recuperação de senha -->
+        <!-- Fomulário de Recuperação de Senha -->
         <section class="row mt-5">
             <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaSenha">
-                <h2>
-                    Gerar Nova Senha
+                <h2 class="text-center mt-2">
+                    Gerar nova Senha
                 </h2>
                 <form action="#" method="post" id="formSenha" class="p-2">
                     <div class="form-group">
@@ -93,40 +94,38 @@
                             Para gerar uma nova senha, digite seu e-mail. Clique no link gerado
                         </small>
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="Email de recuperaçao de senha">
 
-                    </div>
                     <div class="form-group">
-                        <input type="submit" value="::Gerar::" name="btnGerar" id="btnGerar" class="btn btn-primary btn-block" placeholder="Email de recuperaçao de senha">
+                        <input type="email" name="emailGerarSenha" id="emailGerarSenha" class="form-control" placeholder="Email de recuperação de senha">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="::Gerar::" name="btnGerar" id="btnGerar" class="btn btn-primary btn-block">
 
                         <div class="form-group">
                             <p class="text-center">
                                 Já registrado?
-                                <a href="#" id="btnjaRegistrado">
+                                <a href="#" id="btnJaRegistrado">
                                     Entrar por aqui.
                                 </a>
-                            </p>
+                            </P>
                         </div>
                 </form>
             </div>
         </section>
+        <!-- Fim da seção de Recuperação de senha -->
 
-        <!-- Fim da seçao de recuperaçao de senha-->
-
-        <!-- Inicio do formuláriode cadastro de novos usuários -->
-
+        <!-- Início do Formulário de novos usuários -->
         <section class="row mt-5">
-            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaRegistro">
-                <h2 class="text=center mt-2">Registrar-se aqui</h2>
+            <div class="col-lg-4 offset-lg-4 bg-light rounded" id="caixaRegistrado">
+                <h2 class="text-center mt-2">Registre-se aqui</h2>
                 <form action="#" method="post" class="p-2" id="formRegistro">
-
                     <div class="form-group">
-                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome Completo">
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" class="form-control" placeholder="Nome completo">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control" placeholder="Nome de usuário">
+                        <input type="text" name="nomeUsuario" id="nomeUsuario" class="form-control" placeholder="Nome de Usuário">
                     </div>
 
                     <div class="form-group">
@@ -145,37 +144,29 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
                             <label for="concordar" class="custom-control-label">
-                                Eu concordo com <a href="#">os termos e condições. </a>
+                                Eu concordor com <a href="#">os termos e condições. </a>
                             </label>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            <input type="submit" value="::Registrar::" name="btnRegistrar" id="btnregistrar" class="btn btn-primary btn-block">
-                        </div>
+                    <div class="form-group">
+                        <input type="submit" value="::Registrar::" name="btnRegistrar" id="btnregistar" class="btn btn-primary btn-block">
+                    </div>
 
                     <div class="form-group">
                         <p class="text-center">
-                            Novo usuário?
-                            <a href="#" id="btnRegistrarNovo">
-                            Registre-se aqui!
+                            Já registrado?<a href="#" id="btnRegistrarNovo">
+                                Registre-se aqui
                             </a>
                         </p>
                     </div>
 
                 </form>
-
-
             </div>
-
-
         </section>
-
-
-
-
-        <!-- final do formulário de cadastro de novos usuários-->
-
+        <!--Final do formulário de cadastro de novos usuários  -->
     </main>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -183,7 +174,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script>
-     //Código jQuery para mostrar e ocultar os formulários
+        //Código jQuery para mostrar e ocultar os formulários
+        $(function() {
+            $("#btnEsqueci").click(function() {
+                $("#caixaLogin").hide(); //ocultar
+                $("#caixaSenha").show(); //mostrar
+            });
+            $("#btnRegistrarNovo").click(function() {
+                $("#caixaLogin").hide(); //ocultar
+                $("#caixaRegistrado").show(); //mostrar
+            });
+
+        });
     </script>
 </body>
 
