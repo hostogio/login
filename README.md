@@ -1,5 +1,8 @@
 # login
 Sistema de Login em PHP e Javascript
+# aula05 07/10/2019
+- Envio de dados via Ajx e BD
+
 # aula05 04/10/2019
 Envio de dados do Front-end para o Back-end,
 métodos GET e POST.
