@@ -1,30 +1,30 @@
 <?php
 # Back-end
 
-//verifica se o método GET está enviando dados
+//Verifica se o método GET está enviando dados
 if(isset($_GET['nome'])){
-    echo "<h1>Envio de dados método <em>GET</em></h1>";
+    echo "\n<h1>Envio de dados método <em>GET</em></h1>";
 
-echo "\n<pre>\n";
-print_r($_GET); #Array
-echo "\n</pre>\n";
+    echo "\n<pre>\n";
+    print_r($_GET); #Array
+    echo "\n</pre>\n";
 
-print("\n<br><strong>Nome: </strong>");
-print("$_GET[nome]");
+    print("\n<br><strong>Nome: </strong>");
+    print("$_GET[nome]");
 
-print("\n<br><strong>E-mail: </strong>");
-print("$_GET[email]");
+    print("\n<br><strong>E-mail: </strong>");
+    print("$_GET[email]");
 
-print("\n<br><strong>Senha: </strong>");
-print("$_GET[senha]");
+    print("\n<br><strong>Senha: </strong>");
+    print("$_GET[senha]");
 
-print("\n<br><strong>Data de Nascimento: </strong>");
-print("$_GET[data_de_nascimento]");
+    print("\n<br><strong>Data de Nascimento: </strong>");
+    print("$_GET[data_de_nascimento]");
 }
-//verifica se o método POST ta enviando dados
+//Verifica se o método POST está enviando dados
 if(isset($_POST['nome'])){
-    echo "<h1>Envio de dados método <em>POST</em></h1>";
-    
+    echo "\n<h1>Envio de dados método <em>POST</em></h1>";
+
     echo "\n<pre>\n";
     print_r($_POST); #Array
     echo "\n</pre>\n";
