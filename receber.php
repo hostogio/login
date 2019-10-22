@@ -2,7 +2,7 @@
 # Back-end
 
 //Verifica se o método GET está enviando dados
-if(isset($_GET['nome'])){
+if (isset($_GET['nome'])) {
     echo "\n<h1>Envio de dados método <em>GET</em></h1>";
 
     echo "\n<pre>\n";
@@ -22,7 +22,7 @@ if(isset($_GET['nome'])){
     print("$_GET[data_de_nascimento]");
 }
 //Verifica se o método POST está enviando dados
-if(isset($_POST['nome'])){
+if (isset($_POST['nome'])) {
     echo "\n<h1>Envio de dados método <em>POST</em></h1>";
 
     echo "\n<pre>\n";
