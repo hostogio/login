@@ -1,6 +1,7 @@
 <?php
 //Iniciando a sessão
 session_start();
+
 //Conexão com o banco de dados
 require_once 'configBD.php';
 
@@ -90,6 +91,16 @@ if (isset($_POST['action'])) {
         $busca = $sql->fetch();
         if ($busca != null) {
             $_SESSION['nomeDoUsuario'] = $nomeUsuario;
+            if(!empty($_POST['lembrar'])){
+                //Se lembrar não estiver vazio!
+                //Ou seja, a pessoa quer ser lembrada!
+                setcookie("nomeDoUsuario", $nomeUsuario, time()+(60*60*24*30));
+                setcookie("senhaDoUsuario", $senhaUsuario, time()+(60*60*24*30));
+            }else{
+                //A pessoa não quer ser lembrada
+                setcookie("nomeDoUsuario", "");
+                setcookie("senhaDoUsuario", "");
+            }
             echo "ok";
         } else {
             echo "<p class='text-danger'>";

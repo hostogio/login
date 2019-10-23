@@ -1,3 +1,6 @@
+<?php
+require_once "session.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,7 +17,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="#">TNX Systems</a>
+        <a class="navbar-brand" href="#">HR Systems</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,12 +32,12 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Perfil
+                <?= $nomeDoUsuario ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Sobre</a>
                         <a class="dropdown-item" href="#">Fotos</a>
-                        <a class="dropdown-item" href="#">Sair</a>
+                        <a class="dropdown-item" href="sair.php">Sair</a>
                     </div>
                 </li>
             </ul>
@@ -46,13 +49,17 @@
             <h1 class="display-4">Boas vindas</h1>
 
             <h2 class="display-2 text-center rounded p-1" style="background-color: deepPink; color: deepSkyBlue;">
-                Nome completo
+               <?= $nomeCompleto ?>
             </h2>
             <h2 class="text-center">
-                E-mail do Usuário: qualquercoisa@mail.com
+                E-mail do Usuário:
+                <a href="mailto:<?=$emailUsuario?>">
+                <?=$emailUsuario?>
+
+                </a>
             </h2>
             <h2 class="text-center">
-                Registrado em: 18/10/2019
+                Registrado em: <?=$dataCriado ?>
             </h2>
         </div>
     </div>
