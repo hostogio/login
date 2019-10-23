@@ -50,13 +50,17 @@
 
 
                     <div class="form-group">
-                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6">
+                        <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" required minlength="6" 
+                        value="<?= isset($_COOKIE['senhaDoUsuario']) $_COOKIE['senhaDoUsuario']:""; 
+                        ?>">
                     </div>
 
                     <div class="form-group mt-5">
                         <div class="custom-control custom-checkbox">
 
-                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input">
+                            <input type="checkbox" name="lembrar" id="lembrar" class="custom-control-input"
+                            <?= 
+                            isset($_COOKIE['senhaDoUsuario'])?" checked ":""; ?>>
 
                             <label for="lembrar" class="custom-control-label">
                                 Lembrar de mim.
