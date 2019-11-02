@@ -63,6 +63,8 @@ require_once "session.php";
                         </a>
                     </h2>
                     <h2 class="text-center">Registrado em: <?= $dataCriado ?></h2>
+
+                   
                 </div>
             </div>
         </div>

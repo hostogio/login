@@ -44,12 +44,7 @@ CREATE TABLE `usuario` (
 
 --
 -- Extraindo dados da tabela `usuario`
---
-
-INSERT INTO `usuario` (`idUsuario`, `nomeCompleto`, `nomeDoUsuario`, `emailUsuario`, `senhaDoUsuario`, `dataCriado`, `cadastroUrl`) VALUES
-(0, 'Hostogio Raphael', 'Hostogio', 'hostogio_oliveira@estudante.sc.senai.br.com', '624c22a8c8f8c93f18fe5ecd4713100c8d754507', '2019-11-01', 'https://media.mojang.com/blog-image/2c34ca1217c7d95e76a6f8d646adf9208f78145a/blogmcnet.png');
-COMMIT;
-
+--7
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
