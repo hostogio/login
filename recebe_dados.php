@@ -130,7 +130,9 @@ if (isset($_POST['action'])) {
             //echo "Token: $token";
             $sql = $connect->prepare("UPDATE usuario SET token=?, tempoDeVida=DATE_ADD(NOW(), INTERVAl 1 MINUTE) WHERE emailUsuario = ?");
             $sql->bind_param("ss", $token, $email);
-            echo "Token no Banco de Dados!";
+            //echo "Token no Banco de Dados!";
+            $link = "<a href='gerarSenha.php?email=$email&token=$token'>Gerar Nova Senha<a/>";
+            echo $link;
 
 
             }

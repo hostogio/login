@@ -3,9 +3,33 @@
         require_once 'configBD.php';
         $email = $_GET['email'];
         $token = $_GET['token'];
-        $msg = "$email : $token";
+        //$msg = "$email : $token";
         //só para teste! Método GET
-        //
+        //]
+
+        $sql = $connect->("SELECT * FROM usuario WHERE email=? AND token=? AND tempoDeVida > NOW()");
+        $sql->bind_param("ss", $email, $token);
+        $sql->execute();
+
+        $resultado = $sql->get_result();
+        if($resultado->num_rown > 0){
+            if(isset($_POST['gerar'])){
+                $nova_senha = sha1($_POST['senha']);
+                $confirmar_senha =sha1 ($_POST['senha']);
+                if($nova_senha == $confirmar_senha){
+                    $sql = $connect->prepare("UPDATE usuario SET senhaDoUsuario=?, token='' WHERE emailUsuario=?");
+                    $sql->bind_param("ss",$nova_senha,$email);
+                    $sql->execute();
+                    $msg = "Senha alterada com sucesso";
+                }else{
+                    
+                }
+            }
+
+        }else{
+            header("location: index.php");
+            exit();
+        }
     }else{
         //Kickando para o Index
         header("location: index.php");
