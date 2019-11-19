@@ -1,7 +1,6 @@
 <?php
 require_once "session.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,10 +16,8 @@ require_once "session.php";
 </head>
 
 <body>
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">HR Sistemas</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">HR Systems</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +36,7 @@ require_once "session.php";
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Sobre</a>
-                        <a class="dropdown-item" href="fotos.php">Fotos</a>
+                        <a class="dropdown-item" href="#">Fotos</a>
                         <a class="dropdown-item" href="sair.php">Sair</a>
                     </div>
                 </li>
@@ -50,23 +47,19 @@ require_once "session.php";
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Boas vindas</h1>
-            <h2 class="display-2 text-center bg-info text-light rounded p-2"><?= $nomeCompleto ?></h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="<?= $cadastroUrl ?>" width="400px" alt="foto">
-                </div>
-                <div class="col-8">
-                    <h2 class="text-center">
-                        E-mail do Usuário:
-                        <a href="mailto:<?= $email ?>">
-                            <?= $email ?>
-                        </a>
-                    </h2>
-                    <h2 class="text-center">Registrado em: <?= $dataCriado ?></h2>
 
-                   
-                </div>
-            </div>
+            <h2 class="display-2 text-center rounded p-1" style="background-color: deepPink; color: deepSkyBlue;">
+                <?= $nomeCompleto ?>
+            </h2>
+            <h2 class="text-center">
+                E-mail do Usuário:
+                <a href="mailto:<?= $emailUsuario ?>">
+                    <?= $emailUsuario ?>
+                </a>
+            </h2>
+            <h2 class="text-center">
+                Registrado em: <?= $dataCriado  ?>
+            </h2>
         </div>
     </div>
 
